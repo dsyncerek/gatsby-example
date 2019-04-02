@@ -1,5 +1,6 @@
 import { cover, padding } from 'polished';
 import styled, { css } from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 // todo: mobile
 
@@ -12,7 +13,9 @@ export const HeroStyled = styled.div(props => css`
   overflow: hidden;
   
   ${props.big && css`
-    ${padding(props.theme.gutter * 30, 0, props.theme.gutter * 20)};
+    ${breakpoint('sm')`
+      ${padding(props.theme.gutter * 30, 0, props.theme.gutter * 20)};
+    `};
   `};
 `);
 
