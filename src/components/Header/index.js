@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/icons/logo.svg';
 import Container from '../Container';
+import Hamburger from '../Hamburger';
 import TextLink from '../TextLink';
 import { HeaderListStyled, HeaderNavStyled, HeaderStyled } from './styled';
 import useHeaderState from './useHeaderState';
@@ -37,6 +38,7 @@ const Header = () => {
               </TextLink>
             </li>
           </HeaderListStyled>
+          <Hamburger />
         </HeaderNavStyled>
       </Container>
     </HeaderStyled>

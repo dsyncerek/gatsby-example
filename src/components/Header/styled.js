@@ -1,5 +1,7 @@
 import { cover, margin, padding, rgba } from 'polished';
 import styled, { css } from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
+import { HamburgerStyled } from '../Hamburger/styled';
 
 // todo: mobile
 
@@ -19,20 +21,16 @@ export const HeaderStyled = styled.header(props => css`
     z-index: 0;
     background: ${props.theme.colorBackgroundDefault};
     box-shadow: 0 0 20px 0 ${rgba(props.theme.colorPrimary, .2)};
-    height: 0;
+    transform: translateY(-100%);
     transition: ${props.theme.transitionTime};
   }
   
   ${props.state === 'hidden' && css`
-    transform: translateY(-100%);
-  `};
-  
-  ${props.state === 'wtf' && css`
-    ${padding(props.theme.gutter * 3, 0)};
+    ${padding(props.theme.gutter * 2, 0)};
     color: ${props.theme.colorTextDefault};
     
     &::before {
-      height: 100%; 
+      transform: none;
     }
   `};
 `);
@@ -43,15 +41,41 @@ export const HeaderNavStyled = styled.nav(props => css`
   align-items: center;
   justify-content: space-between;
   font-size: 1.125em;
+  
+  ${breakpoint('lg')`
+    ${HamburgerStyled} {
+      display: none;
+    }
+  `};
 `);
 
 export const HeaderListStyled = styled.ul(props => css`
   display: flex;
   align-items: center;
   
-  li {
-    &:not(:last-of-type) {
-      ${margin(0, props.theme.gutter * 6, 0, 0)};
+  ${breakpoint('xs', 'lg')`
+    ${cover()};
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    color: black;
+    transform: translateY(-100%);
+  `};
+  
+  ${breakpoint('lg')`
+    li {
+      &:not(:last-of-type) {
+        ${margin(0, props.theme.gutter * 3, 0, 0)};
+      }
     }
-  }
+  `};
+  
+  ${breakpoint('xl')`
+    li {
+      &:not(:last-of-type) {
+        ${margin(0, props.theme.gutter * 6, 0, 0)};
+      }
+    }
+  `};
 `);
