@@ -33,6 +33,12 @@ export const HeaderStyled = styled.header(props => css`
   `};
 `);
 
+export const HeaderLogoStyled = styled.div(props => css`
+  width: 300px;
+  max-width: 50vw;
+`);
+
+
 export const HeaderNavStyled = styled.nav(props => css`
   position: relative;
   display: flex;
@@ -85,9 +91,4 @@ export const HeaderListStyled = styled.ul(props => css`
       }
     }
   `};
-`);
-
-export const HeaderLogoStyled = styled.div(props => css`
-  width: 300px;
-  max-width: 50vw;
 `);
