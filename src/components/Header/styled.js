@@ -38,7 +38,6 @@ export const HeaderNavStyled = styled.nav(props => css`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.125em;
   
   ${breakpoint('lg')`
     ${HamburgerStyled} {
@@ -50,15 +49,25 @@ export const HeaderNavStyled = styled.nav(props => css`
 export const HeaderListStyled = styled.ul(props => css`
   display: flex;
   align-items: center;
+  font-size: 1.125em;
   
   ${breakpoint('xs', 'lg')`
     ${cover()};
     position: fixed;
+    z-index: 1;
     flex-direction: column;
     justify-content: center;
     background: white;
     color: black;
-    transform: translateY(-100%);
+    font-size: 1.5em;
+    transform: ${props.opened ? 'none' : 'translateY(-100%)'};
+    transition: .3s;
+    
+    li {
+      &:not(:last-of-type) {
+        ${margin(0, 0, props.theme.gutter * 3, 0)};
+      }
+    }
   `};
   
   ${breakpoint('lg')`

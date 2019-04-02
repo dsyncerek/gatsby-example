@@ -19,7 +19,7 @@ const Header = () => {
               <Logo />
             </HeaderLogoStyled>
           </TextLink>
-          <HeaderListStyled>
+          <HeaderListStyled opened={menuOpened}>
             <li>
               <TextLink href="#">
                 About
