@@ -1,5 +1,9 @@
 import { cover, margin, padding, rgba, size } from 'polished';
 import styled, { css, keyframes } from 'styled-components';
+import blob1 from '../../assets/images/blob-1.png';
+import blob2 from '../../assets/images/blob-2.png';
+import blob3 from '../../assets/images/blob-3.png';
+import blob4 from '../../assets/images/blob-4.png';
 
 const moveKeyFrames = width => keyframes`
   from {
@@ -62,19 +66,19 @@ export const MarqueeItemStyled = styled.div(props => css`
   }
   
   &:nth-of-type(4n)::before {
-    background-image: url('https://awww.software/wp-content/themes/awww/assets/images/blob-1.png');
+    background-image: url(${blob1});
   }
   
   &:nth-of-type(4n+1)::before {
-    background-image: url('https://awww.software/wp-content/themes/awww/assets/images/blob-5.png');
+    background-image: url(${blob2});
   }
   
   &:nth-of-type(4n+2)::before {
-    background-image: url('https://awww.software/wp-content/themes/awww/assets/images/blob-3.png');
+    background-image: url(${blob3});
   }
   
   &:nth-of-type(4n+3)::before {
-    background-image: url('https://awww.software/wp-content/themes/awww/assets/images/blob-2.png');
+    background-image: url(${blob4});
   }
   
   &:nth-child(odd) {
