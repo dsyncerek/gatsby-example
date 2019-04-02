@@ -14,7 +14,7 @@ const Header = () => {
       <Container>
         <HeaderNavStyled>
           <TextLink href="#">
-            <Logo style={{ height: 35 }} />
+            <Logo style={{ height: '35px', maxWidth: '50vw' }} />
           </TextLink>
           <HeaderListStyled>
             <li>
