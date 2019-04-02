@@ -4,6 +4,7 @@ export const HamburgerStyled = styled.button(props => css`
   position: relative;
   height: 30px;
   width: 30px;
+  color: currentColor;
   cursor: pointer;
   
      &::before, 
@@ -14,7 +15,6 @@ export const HamburgerStyled = styled.button(props => css`
         height: 2px;
         background: currentColor;
         left: 0;
-        transition: .3s;
     }
     
     &::before {
