@@ -1,13 +1,17 @@
-import { cover, margin, padding } from 'polished';
+import { cover, margin, padding, rgba, size } from 'polished';
 import styled, { css, keyframes } from 'styled-components';
+import blob1 from '../../assets/images/blob-1.png';
+import blob2 from '../../assets/images/blob-2.png';
+import blob3 from '../../assets/images/blob-3.png';
+import blob4 from '../../assets/images/blob-4.png';
 
-const move = itemsLength => keyframes`
+const moveKeyFrames = width => keyframes`
   from {
     transform: translateX(0);
   }
 
   to {
-    transform: translateX(-3720px);
+    transform: translateX(${-width}px);
   }
 `;
 
@@ -18,7 +22,10 @@ export const MarqueeContainerStyled = styled.div(props => css`
   display: flex;
   align-items: center;
   height: 100%;
-  animation: ${move(props.itemsLength)} 60s linear infinite;
+  animation-name: ${moveKeyFrames(props.itemsLength * props.itemWidth)};
+  animation-duration: ${props.itemsLength * 4}s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 `);
 
 export const MarqueeStyled = styled.div(props => css`
@@ -46,7 +53,7 @@ export const MarqueeItemStyled = styled.div(props => css`
   position: relative;
   z-index: 0;
   flex-shrink: 0;
-  width: 300px;
+  ${size('auto', props.width)};
   ${padding(props.theme.gutter * 4, props.theme.gutter * 2)};
   
   &::before {
@@ -58,20 +65,20 @@ export const MarqueeItemStyled = styled.div(props => css`
     background-position: center;
   }
   
+  &:nth-of-type(4n)::before {
+    background-image: url(${blob1});
+  }
+  
   &:nth-of-type(4n+1)::before {
-    background-image: url('https://awww.software/wp-content/themes/awww/assets/images/blob-5.png');
+    background-image: url(${blob2});
   }
   
   &:nth-of-type(4n+2)::before {
-    background-image: url('https://awww.software/wp-content/themes/awww/assets/images/blob-3.png');
+    background-image: url(${blob3});
   }
   
   &:nth-of-type(4n+3)::before {
-    background-image: url('https://awww.software/wp-content/themes/awww/assets/images/blob-2.png');
-  }
-  
-  &:nth-of-type(4n)::before {
-    background-image: url('https://awww.software/wp-content/themes/awww/assets/images/blob-1.png');
+    background-image: url(${blob4});
   }
   
   &:nth-child(odd) {
@@ -81,8 +88,8 @@ export const MarqueeItemStyled = styled.div(props => css`
   &:nth-child(even) {
     ${margin(0, 0, props.theme.gutter * 3, 0)};
   }
-  
-  & > * {
-    background: ${props.theme.colorBackgroundDefault};
-  }
+`);
+
+export const MarqueeItemInnerStyled = styled.div(props => css`
+  background: ${rgba(props.theme.colorBackgroundDefault, .97)};
 `);
