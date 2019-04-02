@@ -3,8 +3,6 @@ import styled, { css } from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import { HamburgerStyled } from '../Hamburger/styled';
 
-// todo: mobile
-
 export const HeaderStyled = styled.header(props => css`
   position: fixed;
   z-index: 9;
@@ -78,4 +76,9 @@ export const HeaderListStyled = styled.ul(props => css`
       }
     }
   `};
+`);
+
+export const HeaderLogoStyled = styled.div(props => css`
+  width: 300px;
+  max-width: 50vw;
 `);
