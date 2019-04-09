@@ -3,6 +3,7 @@ import BehanceIcon from '../../assets/icons/behance.svg';
 import FacebookIcon from '../../assets/icons/facebook.svg';
 import GithubIcon from '../../assets/icons/github.svg';
 import LinkedinIcon from '../../assets/icons/linkedin.svg';
+import FooterImage from '../../assets/images/footer.png';
 import Container from '../Container';
 import IconsList from '../IconsList';
 import SimpleList from '../SimpleList';
@@ -30,7 +31,7 @@ const Footer = () => (
         ]}
       >
       </SimpleList>
-      <img src="https://awww.software/wp-content/themes/awww/assets/images/img-footer.png" alt="" />
+      <img src={FooterImage} alt="" />
       <IconsList
         items={[
           <TextLink href="#">

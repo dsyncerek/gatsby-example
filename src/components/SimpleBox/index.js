@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Button from '../Button';
-import Title from '../Title';
 import { SimpleBoxInnerStyled, SimpleBoxMedia, SimpleBoxStyled } from './styled';
 
-const SimpleBox = ({ link, icon, title, children, btnText = 'Read more' }) => (
+const SimpleBox = ({ link, icon, children, btnText = 'Read more' }) => (
   <SimpleBoxStyled>
     <SimpleBoxInnerStyled>
       {icon && (
@@ -12,9 +11,6 @@ const SimpleBox = ({ link, icon, title, children, btnText = 'Read more' }) => (
           {icon}
         </SimpleBoxMedia>
       )}
-      <Title as="h3" size="tiny">
-        {title}
-      </Title>
       {children}
     </SimpleBoxInnerStyled>
     {link && (
@@ -28,7 +24,6 @@ const SimpleBox = ({ link, icon, title, children, btnText = 'Read more' }) => (
 SimpleBox.propTypes = {
   link: PropTypes.string,
   icon: PropTypes.node,
-  title: PropTypes.node.isRequired,
   children: PropTypes.node.isRequired,
   btnText: PropTypes.string,
 };

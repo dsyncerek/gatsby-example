@@ -1,9 +1,9 @@
 import { cover, margin, padding, rgba, size } from 'polished';
 import styled, { css, keyframes } from 'styled-components';
-import blob1 from '../../assets/images/blob-1.png';
-import blob2 from '../../assets/images/blob-2.png';
-import blob3 from '../../assets/images/blob-3.png';
-import blob4 from '../../assets/images/blob-4.png';
+import blob1 from '../../assets/images/blob/blob-1.png';
+import blob2 from '../../assets/images/blob/blob-2.png';
+import blob3 from '../../assets/images/blob/blob-3.png';
+import blob4 from '../../assets/images/blob/blob-4.png';
 
 const moveKeyFrames = width => keyframes`
   from {

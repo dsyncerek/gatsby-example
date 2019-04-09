@@ -6,9 +6,25 @@ import MobileIcon from '../assets/icons/mobile.svg';
 import ProductIcon from '../assets/icons/product.svg';
 import StaffIcon from '../assets/icons/staff.svg';
 import WebIcon from '../assets/icons/web.svg';
+import DirectCamerasImage from '../assets/images/case-studies/direct-cameras.jpg';
+import MagicianFrankBackImage from '../assets/images/case-studies/magician-frank-back.jpeg';
+import MagicianFrankImage from '../assets/images/case-studies/magician-frank.jpg';
+import MaliResortBackImage from '../assets/images/case-studies/mali-resort-back.jpeg';
+import MaliResortImage from '../assets/images/case-studies/mali-resort.jpg';
+import TrueBeddingImage from '../assets/images/case-studies/true-bedding.jpg';
+import Logo1Image from '../assets/images/clients/logo1.png';
+import Logo2Image from '../assets/images/clients/logo2.png';
+import Logo3Image from '../assets/images/clients/logo3.png';
+import Logo4Image from '../assets/images/clients/logo4.png';
+import Logo5Image from '../assets/images/clients/logo5.png';
+import Logo6Image from '../assets/images/clients/logo6.png';
+import Logo7Image from '../assets/images/clients/logo7.png';
+import Logo8Image from '../assets/images/clients/logo8.png';
+import HeroImage from '../assets/images/hero.jpg';
+import HowWeWorkImage from '../assets/images/how-we-work.png';
+import WhatWeDoImage from '../assets/images/what-we-do.png';
 import Button from '../components/Button';
 import CaseBox from '../components/CaseBox';
-import FluidImage from '../components/FluidImage';
 import Footer from '../components/Footer';
 import { Column, Row } from '../components/Grid';
 import Header from '../components/Header';
@@ -44,7 +60,7 @@ const IndexPage = () => (
     <Hero
       big
       title={<> Lorem ipsum dolor,<br />labore et dolore magna</>}
-      media={<img src="https://awww.software/wp-content/uploads/2018/08/Web-Development-02-Front-end-min.jpg" alt="" />}
+      media={<img src={HeroImage} alt="" />}
     >
       <Text featured>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -56,7 +72,7 @@ const IndexPage = () => (
           <Row wide>
             <Column sizes={{ lg: 6 }}>
               <FigureStyled>
-                <img src="https://awww.software/wp-content/themes/awww/assets/images/img-what-we-do.png" alt="" />
+                <img src={WhatWeDoImage} alt="" />
               </FigureStyled>
             </Column>
             <Column sizes={{ md: 10, lg: 6 }} offsets={{ md: 1, lg: 0 }}>
@@ -77,44 +93,40 @@ const IndexPage = () => (
         <Column>
           <Row>
             <Column sizes={{ md: 6, xxl: 3 }}>
-              <SimpleBox
-                link="#"
-                icon={<WebIcon />}
-                title={<>Web<br /> Development</>}
-              >
+              <SimpleBox link="#" icon={<WebIcon />}>
+                <Title as="h3" size="tiny">
+                  <>Web<br />Development</>
+                </Title>
                 <Text tight>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam vestibulum morbi blandit cursus risus mi.
                 </Text>
               </SimpleBox>
             </Column>
             <Column sizes={{ md: 6, xxl: 3 }}>
-              <SimpleBox
-                link="#"
-                icon={<MobileIcon />}
-                title={<>Mobile<br /> Development</>}
-              >
+              <SimpleBox link="#" icon={<MobileIcon />}>
+                <Title as="h3" size="tiny">
+                  <>Mobile<br />Development</>
+                </Title>
                 <Text tight>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et magnis dis parturient.
                 </Text>
               </SimpleBox>
             </Column>
             <Column sizes={{ md: 6, xxl: 3 }}>
-              <SimpleBox
-                link="#"
-                icon={<ProductIcon />}
-                title={<>Web<br /> Development</>}
-              >
+              <SimpleBox link="#" icon={<ProductIcon />}>
+                <Title as="h3" size="tiny">
+                  <>Web<br />Development</>
+                </Title>
                 <Text tight>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus turpis in eu mi neque egestas congue.
                 </Text>
               </SimpleBox>
             </Column>
             <Column sizes={{ md: 6, xxl: 3 }}>
-              <SimpleBox
-                link="#"
-                icon={<StaffIcon />}
-                title={<>Mobile<br /> Development</>}
-              >
+              <SimpleBox link="#" icon={<StaffIcon />}>
+                <Title as="h3" size="tiny">
+                  <>Mobile<br />Development</>
+                </Title>
                 <Text tight>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget.
                 </Text>
@@ -132,7 +144,7 @@ const IndexPage = () => (
               Technology
             </Title>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod et dolore magna aliqua.
             </Text>
             <Text secondary>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis vulputate enim nulla aliquet porttitor lacus.
@@ -141,7 +153,7 @@ const IndexPage = () => (
         </Column>
         <Column sizes={{ lg: 6 }}>
           <FigureStyled>
-            <img src="https://awww.software/wp-content/themes/awww/assets/images/img-what-we-do.png" alt="" />
+            <img src={WhatWeDoImage} alt="" />
           </FigureStyled>
         </Column>
       </Row>
@@ -154,58 +166,36 @@ const IndexPage = () => (
               Our Partners
             </Title>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna aliqua.
             </Text>
           </TextContent>
         </Column>
         <Column>
           <Marquee
             items={[
-              <Quote media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-ipi.png" alt="" />}>
-                Our clients brag about their websites almost every time we speak to them!
+              <Quote media={<img src={Logo1Image} alt="" />}>
+                Lorem ipsum dolor sit amet augue. Nam sed enim ac libero. Vestibulum ante ipsum primis.
               </Quote>,
-              <Quote media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-mowies.png" alt="" />}>
-                IPI website: business-like, modern & consistent with our brand’s visual identification - those are the goals that have been fully achieved!
+              <Quote media={<img src={Logo2Image} alt="" />}>
+                Cum sociis natoque penatibus eu, luctus laoreet. Nam consectetuer adipiscing elit. Curabitur magna sit amet, consectetuer.
               </Quote>,
-              <Quote media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-mm.png" alt="" />}>
-                Huge thanks to all the AWWW team for their top-notch professionalism… and patience! :D
+              <Quote media={<img src={Logo3Image} alt="" />}>
+                Duis porttitor auctor, sapien eleifend in, purus. Nulla interdum libero.
               </Quote>,
-              <Quote media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-ads.png" alt="" />}>
-                AWWW Software is keeping an eye on our website since few seasons already - they are recommendable in 100% :)
+              <Quote media={<img src={Logo4Image} alt="" />}>
+                Proin nunc mauris, rutrum ut, semper leo. Suspendisse porttitor ullamcorper, enim eget massa. Nam turpis eget ipsum ante.
               </Quote>,
-              <Quote media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-peira.png" alt="" />}>
-                “Fu&%ing awesome!” is more or less what Vogue editor has told me after my site’s premiere!
+              <Quote media={<img src={Logo5Image} alt="" />}>
+                Mauris fringilla sed, ullamcorper augue, dictum arcu. Sed nonummy enim dictum.
               </Quote>,
-              <Quote
-                media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-fdirect.png" alt="" />}
-              >
-                Our romance with AWW team and Joanna goes for few years now - yes, we love you guys!
+              <Quote media={<img src={Logo6Image} alt="" />}>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per conubia nostra, per inceptos.
               </Quote>,
-              <Quote
-                media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-tarabanski.png" alt="" />}
-              >
-                To say we are thrilled about the website and the overall cooperation with the team is to say that the sun is only a bit bright.
+              <Quote media={<img src={Logo7Image} alt="" />}>
+                Phasellus vitae lorem vitae nibh consectetuer condimentum ante. Duis tempor, sapien magna et accumsan.
               </Quote>,
-              <Quote media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-ila.png" alt="" />}>
-                Our sales have gone up by 75% in only 3 months since the website was launched!
-              </Quote>,
-              <Quote
-                media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-fotofestiwal.png" alt="" />}
-              >
-                Darek, those past 2 editions - we wouldn't be able to do it without you!
-              </Quote>,
-              <Quote
-                media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-casamali.png" alt="" />}
-              >
-                The site’s implementation (for Shoplo platform) have gone superbly. Again, many thanks!
-              </Quote>,
-              <Quote media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-janbor.png" alt="" />}>
-                Our website - the best thing next to sliced bread!
-              </Quote>,
-              <Quote
-                media={<img src="https://awww.software/wp-content/uploads/2018/08/awww-logo-threnton.png" alt="" />}
-              >
-                The websites for all our development investments were done by the fantastic AWWW team!
+              <Quote media={<img src={Logo8Image} alt="" />}>
+                Cum sociis natoque penatibus et ultrices posuere lobortis, massa non.
               </Quote>,
             ]}
           />
@@ -220,12 +210,12 @@ const IndexPage = () => (
               How we work
             </Title>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ua aliqua.
             </Text>
           </TextContent>
         </Column>
         <Column>
-          <FluidImage src="how-we-work.png" />
+          <img src={HowWeWorkImage} alt="" />
         </Column>
       </Row>
     </Section>
@@ -246,57 +236,42 @@ const IndexPage = () => (
             <Column sizes={{ md: 6 }}>
               <CaseBox
                 href="#"
-                title="Fotofestiwal"
-                media1={
-                  <img
-                    src="https://awww.software/wp-content/uploads/2018/07/AWWW-Fotofestiwal-Min-001-min-768x499.jpg"
-                    alt=""
-                  />
-                }
-              />
-            </Column>
-            <Column sizes={{ md: 6 }}>
-              <CaseBox
-                title="Tarabanski"
-                big
-                media1={
-                  <img
-                    src="https://awww.software/wp-content/uploads/2018/07/dominik_tarabanski_-_032c_adonis_bosso_10-min.jpg"
-                    alt=""
-                  />
-                }
+                title="Magician Frank"
+                media1={<img src={MagicianFrankImage} alt="" />}
+                media2={<img src={MagicianFrankBackImage} alt="" />}
               >
-                <SimpleList tight items={['WordPress', 'UI/UX']} />
+                <SimpleList tight items={['React', 'Product Design']} />
               </CaseBox>
             </Column>
             <Column sizes={{ md: 6 }}>
               <CaseBox
-                title='Threnton'
+                href="#"
+                title="Direct Cameras"
                 big
-                media1={
-                  <img
-                    src="https://awww.software/wp-content/uploads/2018/07/AWWW-Thr-min-768x992.jpg"
-                    alt=""
-                  />
-                }
-              />
+                media1={<img src={DirectCamerasImage} alt="" />}
+              >
+                <SimpleList tight items={['WordPress', 'Product Design']} />
+              </CaseBox>
             </Column>
             <Column sizes={{ md: 6 }}>
               <CaseBox
-                title="Rooms"
-                media1={
-                  <img
-                    src="https://awww.software/wp-content/uploads/2018/07/AWWW-Rooms-Website-Min-000-min-768x499.jpg"
-                    alt=""
-                  />
-                }
-                media2={
-                  <img
-                    src="https://awww.software/wp-content/uploads/2018/07/AWWW-Thr-min-768x992.jpg"
-                    alt=""
-                  />
-                }
-              />
+                href="#"
+                title="True Bedding"
+                big
+                media1={<img src={TrueBeddingImage} alt="" />}
+              >
+                <SimpleList tight items={['Shoplo', 'Product Design']} />
+              </CaseBox>
+            </Column>
+            <Column sizes={{ md: 6 }}>
+              <CaseBox
+                href="#"
+                title="Mali Resort"
+                media1={<img src={MaliResortImage} alt="" />}
+                media2={<img src={MaliResortBackImage} alt="" />}
+              >
+                <SimpleList tight items={['Angular', 'Product Design']} />
+              </CaseBox>
             </Column>
           </Row>
         </Column>

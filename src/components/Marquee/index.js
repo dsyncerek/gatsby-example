@@ -7,8 +7,8 @@ const Marquee = ({ items = [] }) => {
   return (
     <MarqueeStyled>
       <MarqueeContainerStyled itemsLength={items.length} itemWidth={itemWidth}>
-        {[...items, ...items].map(item => (
-          <MarqueeItemStyled width={itemWidth}>
+        {[...items, ...items].map((item, i) => (
+          <MarqueeItemStyled width={itemWidth} key={i}>
             <MarqueeItemInnerStyled>
               {item}
             </MarqueeItemInnerStyled>
