@@ -20,7 +20,6 @@ export const MarqueeContainerStyled = styled.div(props => css`
   left: 0;
   top: 0;
   display: flex;
-  align-items: center;
   height: 100%;
   animation-name: ${moveKeyFrames(props.itemsLength * props.itemWidth)};
   animation-duration: ${props.itemsLength * 4}s;

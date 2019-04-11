@@ -41,7 +41,10 @@ const Header = () => {
               </TextLink>
             </li>
           </HeaderListStyled>
-          <Hamburger onClick={() => setMenuOpened(b => !b)} />
+          <Hamburger
+            onClick={() => setMenuOpened(b => !b)}
+            opened={menuOpened}
+          />
         </HeaderNavStyled>
       </Container>
     </HeaderStyled>

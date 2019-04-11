@@ -18,7 +18,7 @@ import WebIcon from '../assets/svg/icons/web.svg';
 import AWSLogo from '../assets/svg/logos/aws.svg';
 import GoogleLogo from '../assets/svg/logos/google.svg';
 import IBMLogo from '../assets/svg/logos/ibm.svg';
-import MiscrosoftLogo from '../assets/svg/logos/microsoft.svg';
+import MicrosoftLogo from '../assets/svg/logos/microsoft.svg';
 import NetflixLogo from '../assets/svg/logos/netflix.svg';
 import OracleLogo from '../assets/svg/logos/oracle.svg';
 import SlackLogo from '../assets/svg/logos/slack.svg';
@@ -173,7 +173,7 @@ const IndexPage = () => (
         <Column>
           <Marquee
             items={[
-              <Quote media={<MiscrosoftLogo />}>
+              <Quote media={<MicrosoftLogo />}>
                 Lorem ipsum dolor sit amet augue. Nam sed enim ac libero. Vestibulum ante ipsum primis.
               </Quote>,
               <Quote media={<AWSLogo />}>

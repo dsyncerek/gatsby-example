@@ -1,29 +1,45 @@
+import { size } from 'polished';
 import styled, { css } from 'styled-components';
 
 export const HamburgerStyled = styled.button(props => css`
   position: relative;
-  height: 30px;
-  width: 30px;
+  ${size(props.theme.gutter * 3)};
   color: currentColor;
   cursor: pointer;
   
-     &::before, 
-     &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: currentColor;
-        left: 0;
+  &::before, 
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transition: .3s;
+  }
+  
+  ${!props.opened && css`
+    &::before {
+      top: 7px;
+      width: 75%;
     }
     
+    &::after {
+      top: auto;
+      bottom: 7px;
+      box-shadow: 0 -7px currentColor;
+    }
+  `};
+  
+  ${props.opened && css`
     &::before {
-        top: 7px;
-        width: 75%;
+      transform: rotate(45deg);
     }
-
-    &:after {
-       bottom: 7px;
-       box-shadow: 0 -7px currentColor;
+    
+    &::after {
+      transform: rotate(-45deg);
+      box-shadow: none;
     }
+  `};
 `);

@@ -9,8 +9,8 @@ export const HeaderStyled = styled.header(props => css`
   top: 0;
   left: 0;
   right: 0;
-  ${padding(props.theme.gutter * 6, 0)};
-  color: ${props.theme.colorTextReversed};
+  ${padding(props.theme.gutter * 2, 0)};
+  color: ${props.theme.colorTextDefault};
   transition: ${props.theme.transitionTime};
   
   &::before {
@@ -19,17 +19,26 @@ export const HeaderStyled = styled.header(props => css`
     z-index: 0;
     background: ${props.theme.colorBackgroundDefault};
     box-shadow: 0 0 20px 0 ${rgba(props.theme.colorPrimary, .2)};
-    transform: translateY(-100%);
     transition: ${props.theme.transitionTime};
   }
   
-  ${props.state === 'hidden' && css`
-    ${padding(props.theme.gutter * 2, 0)};
-    color: ${props.theme.colorTextDefault};
+  ${breakpoint('lg')`
+    position: fixed;
+    ${padding(props.theme.gutter * 6, 0)};
+    color: ${props.theme.colorTextReversed};
     
     &::before {
-      transform: none;
+      transform: translateY(-100%);
     }
+    
+    ${props.state === 'hidden' && css`
+      ${padding(props.theme.gutter * 2, 0)};
+      color: ${props.theme.colorTextDefault};
+      
+      &::before {
+        transform: none;
+      }
+    `};
   `};
 `);
 
@@ -37,7 +46,6 @@ export const HeaderLogoStyled = styled.div(props => css`
   width: 200px;
   max-width: 50vw;
 `);
-
 
 export const HeaderNavStyled = styled.nav(props => css`
   position: relative;
@@ -60,14 +68,14 @@ export const HeaderListStyled = styled.ul(props => css`
   ${breakpoint('xs', 'lg')`
     ${cover()};
     position: fixed;
-    z-index: 1;
+    z-index: -1;
     flex-direction: column;
     justify-content: center;
     background: white;
     color: black;
     font-size: 1.5em;
     transform: ${props.opened ? 'none' : 'translateY(-100%)'};
-    transition: .3s;
+    transition: .5s;
     
     li {
       &:not(:last-of-type) {
