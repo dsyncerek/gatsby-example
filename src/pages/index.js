@@ -2,27 +2,27 @@ import { cover } from 'polished';
 import React from 'react';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
-import MobileIcon from '../assets/icons/mobile.svg';
-import ProductIcon from '../assets/icons/product.svg';
-import StaffIcon from '../assets/icons/staff.svg';
-import WebIcon from '../assets/icons/web.svg';
 import DirectCamerasImage from '../assets/images/case-studies/direct-cameras.jpg';
 import MagicianFrankBackImage from '../assets/images/case-studies/magician-frank-back.jpeg';
 import MagicianFrankImage from '../assets/images/case-studies/magician-frank.jpg';
 import MaliResortBackImage from '../assets/images/case-studies/mali-resort-back.jpeg';
 import MaliResortImage from '../assets/images/case-studies/mali-resort.jpg';
 import TrueBeddingImage from '../assets/images/case-studies/true-bedding.jpg';
-import Logo1Image from '../assets/images/clients/logo1.png';
-import Logo2Image from '../assets/images/clients/logo2.png';
-import Logo3Image from '../assets/images/clients/logo3.png';
-import Logo4Image from '../assets/images/clients/logo4.png';
-import Logo5Image from '../assets/images/clients/logo5.png';
-import Logo6Image from '../assets/images/clients/logo6.png';
-import Logo7Image from '../assets/images/clients/logo7.png';
-import Logo8Image from '../assets/images/clients/logo8.png';
 import HeroImage from '../assets/images/hero.jpg';
 import HowWeWorkImage from '../assets/images/how-we-work.png';
 import WhatWeDoImage from '../assets/images/what-we-do.png';
+import MobileIcon from '../assets/svg/icons/mobile.svg';
+import ProductIcon from '../assets/svg/icons/product.svg';
+import StaffIcon from '../assets/svg/icons/staff.svg';
+import WebIcon from '../assets/svg/icons/web.svg';
+import AWSLogo from '../assets/svg/logos/aws.svg';
+import GoogleLogo from '../assets/svg/logos/google.svg';
+import IBMLogo from '../assets/svg/logos/ibm.svg';
+import MiscrosoftLogo from '../assets/svg/logos/microsoft.svg';
+import NetflixLogo from '../assets/svg/logos/netflix.svg';
+import OracleLogo from '../assets/svg/logos/oracle.svg';
+import SlackLogo from '../assets/svg/logos/slack.svg';
+import StorybookLogo from '../assets/svg/logos/storybook.svg';
 import Button from '../components/Button';
 import CaseBox from '../components/CaseBox';
 import Footer from '../components/Footer';
@@ -173,28 +173,28 @@ const IndexPage = () => (
         <Column>
           <Marquee
             items={[
-              <Quote media={<img src={Logo1Image} alt="" />}>
+              <Quote media={<MiscrosoftLogo />}>
                 Lorem ipsum dolor sit amet augue. Nam sed enim ac libero. Vestibulum ante ipsum primis.
               </Quote>,
-              <Quote media={<img src={Logo2Image} alt="" />}>
+              <Quote media={<AWSLogo />}>
                 Cum sociis natoque penatibus eu, luctus laoreet. Nam consectetuer adipiscing elit. Curabitur magna sit amet, consectetuer.
               </Quote>,
-              <Quote media={<img src={Logo3Image} alt="" />}>
+              <Quote media={<StorybookLogo />}>
                 Duis porttitor auctor, sapien eleifend in, purus. Nulla interdum libero.
               </Quote>,
-              <Quote media={<img src={Logo4Image} alt="" />}>
+              <Quote media={<GoogleLogo />}>
                 Proin nunc mauris, rutrum ut, semper leo. Suspendisse porttitor ullamcorper, enim eget massa. Nam turpis eget ipsum ante.
               </Quote>,
-              <Quote media={<img src={Logo5Image} alt="" />}>
+              <Quote media={<NetflixLogo />}>
                 Mauris fringilla sed, ullamcorper augue, dictum arcu. Sed nonummy enim dictum.
               </Quote>,
-              <Quote media={<img src={Logo6Image} alt="" />}>
+              <Quote media={<IBMLogo />}>
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per conubia nostra, per inceptos.
               </Quote>,
-              <Quote media={<img src={Logo7Image} alt="" />}>
+              <Quote media={<SlackLogo />}>
                 Phasellus vitae lorem vitae nibh consectetuer condimentum ante. Duis tempor, sapien magna et accumsan.
               </Quote>,
-              <Quote media={<img src={Logo8Image} alt="" />}>
+              <Quote media={<OracleLogo />}>
                 Cum sociis natoque penatibus et ultrices posuere lobortis, massa non.
               </Quote>,
             ]}

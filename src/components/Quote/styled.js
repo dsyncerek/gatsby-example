@@ -6,8 +6,10 @@ export const QuoteStyled = styled.div(props => css`
   text-align: center;
   box-shadow: 0 0 20px 0 ${rgba(props.theme.colorPrimary, .2)};
   
-  img {
+  img,
+  svg {
     max-height: 30px;
+    max-width: 75%;
     ${margin(0, 0, props.theme.gutter, 0)};
   }
 `);

@@ -34,7 +34,7 @@ export const HeaderStyled = styled.header(props => css`
 `);
 
 export const HeaderLogoStyled = styled.div(props => css`
-  width: 300px;
+  width: 200px;
   max-width: 50vw;
 `);
 

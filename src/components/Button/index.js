@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import ChevronRightIcon from '../../assets/icons/chevron-right.svg';
+import ChevronRightIcon from '../../assets/svg/icons/chevron-right.svg';
 import { ButtonStyled } from './styled';
 
 const Button = ({ children, block, href, as }) => (

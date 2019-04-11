@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../../assets/icons/logo.svg';
+import Logo from '../../assets/svg/logos/logo.svg';
 import Container from '../Container';
 import Hamburger from '../Hamburger';
 import TextLink from '../TextLink';
