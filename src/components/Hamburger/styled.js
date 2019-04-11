@@ -16,7 +16,7 @@ export const HamburgerStyled = styled.button(props => css`
     width: 100%;
     height: 2px;
     background: currentColor;
-    transition: .3s;
+    transition: ${props.theme.transitionTime};
   }
   
   ${!props.opened && css`

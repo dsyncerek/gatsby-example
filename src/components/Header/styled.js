@@ -69,12 +69,15 @@ export const HeaderListStyled = styled.ul(props => css`
     ${cover()};
     position: fixed;
     z-index: -1;
+    top: -100%;
+    bottom: auto;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
     background: white;
     color: black;
     font-size: 1.5em;
-    transform: ${props.opened ? 'none' : 'translateY(-100%)'};
+    transform: ${props.opened ? 'translateY(100%)' : 'none'};
     transition: .5s;
     
     li {
@@ -84,7 +87,7 @@ export const HeaderListStyled = styled.ul(props => css`
     }
   `};
   
-  ${breakpoint('sm')`
+  ${breakpoint('sm', 'lg')`
     font-size: 2em;
   `};
   
