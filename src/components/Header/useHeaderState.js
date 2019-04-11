@@ -17,6 +17,7 @@ export default function() {
   const throttledFun = throttle(fun, 250);
 
   useEffect(() => {
+    fun();
     window.addEventListener('scroll', throttledFun, false);
     return () => window.removeEventListener('scroll', throttledFun, false);
   }, []);
