@@ -84,6 +84,10 @@ export const HeaderListStyled = styled.ul(props => css`
     }
   `};
   
+  ${breakpoint('sm')`
+    font-size: 2em;
+  `};
+  
   ${breakpoint('lg')`
     li {
       &:not(:last-of-type) {
