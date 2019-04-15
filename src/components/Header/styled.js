@@ -19,7 +19,6 @@ export const HeaderStyled = styled.header(props => css`
     z-index: 0;
     background: ${props.theme.colorBackgroundDefault};
     box-shadow: 0 0 20px 0 ${rgba(props.theme.colorPrimary, .2)};
-    transition: ${props.theme.transitionTime};
   }
   
   ${breakpoint('lg')`
@@ -28,6 +27,7 @@ export const HeaderStyled = styled.header(props => css`
     color: ${props.theme.colorTextReversed};
     
     &::before {
+      transition: ${props.theme.transitionTime};
       transform: translateY(-100%);
     }
     

@@ -59,7 +59,7 @@ const IndexPage = () => (
     <Header />
     <Hero
       big
-      title={<> Lorem ipsum dolor,<br />labore et dolore magna</>}
+      title={<>Lorem ipsum dolor,<br />labore et dolore magna</>}
       media={<img src={HeroImage} alt="" />}
     >
       <Text featured>
