@@ -11,7 +11,6 @@ export const HeaderStyled = styled.header(props => css`
   right: 0;
   ${padding(props.theme.gutter * 2, 0)};
   color: ${props.theme.colorTextDefault};
-  transition: ${props.theme.transitionTime};
   
   &::before {
     content: "";
@@ -25,6 +24,7 @@ export const HeaderStyled = styled.header(props => css`
     position: fixed;
     ${padding(props.theme.gutter * 6, 0)};
     color: ${props.theme.colorTextReversed};
+    transition: ${props.theme.transitionTime};
     
     &::before {
       transition: ${props.theme.transitionTime};
