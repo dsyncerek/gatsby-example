@@ -21,7 +21,6 @@ export const HeaderStyled = styled.header(props => css`
   }
   
   ${breakpoint('lg')`
-    position: fixed;
     ${padding(props.theme.gutter * 6, 0)};
     color: ${props.theme.colorTextReversed};
     transition: ${props.theme.transitionTime};
