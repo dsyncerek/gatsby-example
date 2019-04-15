@@ -9,6 +9,8 @@ export const HeaderStyled = styled.header(props => css`
   top: 0;
   left: 0;
   right: 0;
+  ${padding(props.theme.gutter * 2, 0)};
+  color: ${props.theme.colorTextDefault};
   
   &::before {
     content: "";
@@ -17,11 +19,6 @@ export const HeaderStyled = styled.header(props => css`
     background: ${props.theme.colorBackgroundDefault};
     box-shadow: 0 0 20px 0 ${rgba(props.theme.colorPrimary, .2)};
   }
-  
-  ${breakpoint('xs', 'lg')`
-    ${padding(props.theme.gutter * 2, 0)};
-    color: ${props.theme.colorTextDefault};
-  `};
   
   ${breakpoint('lg')`
     ${padding(props.theme.gutter * 6, 0)};
