@@ -277,7 +277,7 @@ const IndexPage = () => (
         </Column>
         <Column>
           <TextContent>
-            <Button as="a" href="#">
+            <Button as="a" href="/case-studies">
               See all case studies
             </Button>
           </TextContent>
