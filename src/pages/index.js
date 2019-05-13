@@ -1,5 +1,6 @@
 import { cover } from 'polished';
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import DirectCamerasImage from '../assets/images/case-studies/direct-cameras.jpg';
@@ -277,7 +278,7 @@ const IndexPage = () => (
         </Column>
         <Column>
           <TextContent>
-            <Button as="a" href="/case-studies">
+            <Button as={Link} to="/case-studies">
               See all case studies
             </Button>
           </TextContent>

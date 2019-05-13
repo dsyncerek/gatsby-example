@@ -3,8 +3,8 @@ import React from 'react';
 import ChevronRightIcon from '../../assets/svg/icons/chevron-right.svg';
 import { ButtonStyled } from './styled';
 
-const Button = ({ children, block, href, as }) => (
-  <ButtonStyled block={block} href={href} as={as}>
+const Button = ({ children, block, ...props }) => (
+  <ButtonStyled block={block} {...props}>
     {children}
     <ChevronRightIcon />
   </ButtonStyled>
@@ -13,8 +13,6 @@ const Button = ({ children, block, href, as }) => (
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   block: PropTypes.bool,
-  href: PropTypes.string,
-  as: PropTypes.string,
 };
 
 export default Button;

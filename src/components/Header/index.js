@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "gatsby"
 import Logo from '../../assets/svg/logos/logo.svg';
 import Container from '../Container';
 import Hamburger from '../Hamburger';
@@ -14,7 +15,7 @@ const Header = () => {
     <HeaderStyled state={headerState}>
       <Container>
         <HeaderNavStyled>
-          <TextLink href="#">
+          <TextLink to="/" as={Link}>
             <HeaderLogoStyled>
               <Logo />
             </HeaderLogoStyled>
@@ -31,7 +32,7 @@ const Header = () => {
               </TextLink>
             </li>
             <li>
-              <TextLink href="/case-studies">
+              <TextLink to="/case-studies" as={Link}>
                 Case studies
               </TextLink>
             </li>
