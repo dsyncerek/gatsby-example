@@ -2,9 +2,26 @@
   "name": "gatsby-example",
   "version": "0.1.0",
   "scripts": {
-    "build": "gatsby build",
     "start": "gatsby develop",
-    "serve": "gatsby serve"
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "format": "prettier src/**/*.js --write",
+    "lint": "npm run lint:scripts && npm run lint:styles",
+    "lint:scripts": "eslint src/**/*.js --fix",
+    "lint:styles": "stylelint src/**/*.js --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "stylelint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "gatsby": "^2.15.14",
@@ -28,14 +45,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
-    "gatsby-plugin-eslint": "^2.0.5",
     "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-plugin-styled-components": "^3.1.5",
-    "gatsby-plugin-stylelint": "^3.2.0",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.8.0",
-    "stylelint-webpack-plugin": "^0.10.5"
+    "stylelint-processor-styled-components": "^1.8.0"
   }
 }
