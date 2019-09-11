@@ -9,9 +9,7 @@ const Marquee = ({ items = [] }) => {
       <MarqueeContainerStyled itemsLength={items.length} itemWidth={itemWidth}>
         {[...items, ...items].map((item, i) => (
           <MarqueeItemStyled width={itemWidth} key={i}>
-            <MarqueeItemInnerStyled>
-              {item}
-            </MarqueeItemInnerStyled>
+            <MarqueeItemInnerStyled>{item}</MarqueeItemInnerStyled>
           </MarqueeItemStyled>
         ))}
       </MarqueeContainerStyled>

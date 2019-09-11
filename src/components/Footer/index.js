@@ -19,18 +19,11 @@ const Footer = () => (
       </Title>
       <SimpleList
         items={[
-          <TextLink href="#">
-            hello@lorem.ipsum
-          </TextLink>,
-          <TextLink href="#">
-            +48 394 103 953
-          </TextLink>,
-          <TextLink href="#">
-            Estimate project
-          </TextLink>,
+          <TextLink href="#">hello@lorem.ipsum</TextLink>,
+          <TextLink href="#">+48 394 103 953</TextLink>,
+          <TextLink href="#">Estimate project</TextLink>,
         ]}
-      >
-      </SimpleList>
+      ></SimpleList>
       <img src={FooterImage} alt="" />
       <IconsList
         items={[
@@ -39,7 +32,8 @@ const Footer = () => (
           </TextLink>,
           <TextLink href="#">
             <GithubIcon />
-          </TextLink>, <TextLink href="#">
+          </TextLink>,
+          <TextLink href="#">
             <LinkedinIcon />
           </TextLink>,
           <TextLink href="#">

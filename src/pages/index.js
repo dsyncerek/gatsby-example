@@ -43,7 +43,7 @@ import Title from '../components/Title';
 const FigureStyled = styled.figure`
   height: 100%;
   position: relative;
-  
+
   ${breakpoint('lg')`
     img,
     video {
@@ -60,12 +60,16 @@ const IndexPage = () => (
     <Header />
     <Hero
       big
-      title={<>Lorem ipsum dolor,<br />labore et dolore magna</>}
+      title={
+        <>
+          Lorem ipsum dolor,
+          <br />
+          labore et dolore magna
+        </>
+      }
       media={<img src={HeroImage} alt="" />}
     >
-      <Text featured>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </Text>
+      <Text featured>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
     </Hero>
     <Section>
       <Row wide>
@@ -82,10 +86,13 @@ const IndexPage = () => (
                   What we do
                 </Title>
                 <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi diam. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit.
                 </Text>
                 <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </Text>
               </TextContent>
             </Column>
@@ -96,40 +103,60 @@ const IndexPage = () => (
             <Column sizes={{ md: 6, xxl: 3 }}>
               <SimpleBox link="#" icon={<WebIcon />}>
                 <Title as="h3" size="tiny">
-                  <>Web<br />Development</>
+                  <>
+                    Web
+                    <br />
+                    Development
+                  </>
                 </Title>
                 <Text tight>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam vestibulum morbi blandit cursus risus mi.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Aliquam vestibulum morbi blandit cursus risus mi.
                 </Text>
               </SimpleBox>
             </Column>
             <Column sizes={{ md: 6, xxl: 3 }}>
               <SimpleBox link="#" icon={<MobileIcon />}>
                 <Title as="h3" size="tiny">
-                  <>Mobile<br />Development</>
+                  <>
+                    Mobile
+                    <br />
+                    Development
+                  </>
                 </Title>
                 <Text tight>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et magnis dis parturient.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Natoque penatibus et magnis dis parturient.
                 </Text>
               </SimpleBox>
             </Column>
             <Column sizes={{ md: 6, xxl: 3 }}>
               <SimpleBox link="#" icon={<ProductIcon />}>
                 <Title as="h3" size="tiny">
-                  <>Web<br />Development</>
+                  <>
+                    Web
+                    <br />
+                    Development
+                  </>
                 </Title>
                 <Text tight>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus turpis in eu mi neque egestas congue.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Faucibus turpis in eu mi neque egestas congue.
                 </Text>
               </SimpleBox>
             </Column>
             <Column sizes={{ md: 6, xxl: 3 }}>
               <SimpleBox link="#" icon={<StaffIcon />}>
                 <Title as="h3" size="tiny">
-                  <>Mobile<br />Development</>
+                  <>
+                    Mobile
+                    <br />
+                    Development
+                  </>
                 </Title>
                 <Text tight>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ullamcorper sit amet risus nullam eget.
                 </Text>
               </SimpleBox>
             </Column>
@@ -145,10 +172,13 @@ const IndexPage = () => (
               Technology
             </Title>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod et dolore magna aliqua.
             </Text>
             <Text secondary>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis vulputate enim nulla aliquet porttitor lacus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Mattis vulputate enim nulla aliquet porttitor lacus.
             </Text>
           </TextContent>
         </Column>
@@ -167,7 +197,9 @@ const IndexPage = () => (
               Our Partners
             </Title>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna aliqua.
             </Text>
           </TextContent>
         </Column>
@@ -178,13 +210,15 @@ const IndexPage = () => (
                 Lorem ipsum dolor sit amet augue. Nam sed enim ac libero. Vestibulum ante ipsum primis.
               </Quote>,
               <Quote media={<AWSLogo />}>
-                Cum sociis natoque penatibus eu, luctus laoreet. Nam consectetuer adipiscing elit. Curabitur magna sit amet, consectetuer.
+                Cum sociis natoque penatibus eu, luctus laoreet. Nam consectetuer adipiscing elit. Curabitur magna sit
+                amet, consectetuer.
               </Quote>,
               <Quote media={<StorybookLogo />}>
                 Duis porttitor auctor, sapien eleifend in, purus. Nulla interdum libero.
               </Quote>,
               <Quote media={<GoogleLogo />}>
-                Proin nunc mauris, rutrum ut, semper leo. Suspendisse porttitor ullamcorper, enim eget massa. Nam turpis eget ipsum ante.
+                Proin nunc mauris, rutrum ut, semper leo. Suspendisse porttitor ullamcorper, enim eget massa. Nam turpis
+                eget ipsum ante.
               </Quote>,
               <Quote media={<NetflixLogo />}>
                 Mauris fringilla sed, ullamcorper augue, dictum arcu. Sed nonummy enim dictum.
@@ -211,7 +245,9 @@ const IndexPage = () => (
               How we work
             </Title>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ua aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ua aliqua.
             </Text>
           </TextContent>
         </Column>
@@ -228,7 +264,8 @@ const IndexPage = () => (
               Case studies
             </Title>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Consequat interdum varius sit amet.
             </Text>
           </TextContent>
         </Column>
@@ -245,22 +282,12 @@ const IndexPage = () => (
               </CaseBox>
             </Column>
             <Column sizes={{ md: 6 }}>
-              <CaseBox
-                href="#"
-                title="Direct Cameras"
-                big
-                media1={<img src={DirectCamerasImage} alt="" />}
-              >
+              <CaseBox href="#" title="Direct Cameras" big media1={<img src={DirectCamerasImage} alt="" />}>
                 <SimpleList tight items={['WordPress', 'Product Design']} />
               </CaseBox>
             </Column>
             <Column sizes={{ md: 6 }}>
-              <CaseBox
-                href="#"
-                title="True Bedding"
-                big
-                media1={<img src={TrueBeddingImage} alt="" />}
-              >
+              <CaseBox href="#" title="True Bedding" big media1={<img src={TrueBeddingImage} alt="" />}>
                 <SimpleList tight items={['Shoplo', 'Product Design']} />
               </CaseBox>
             </Column>

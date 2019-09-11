@@ -13,9 +13,7 @@ const CaseBox = ({ big, href, title, media1, media2, children }) => (
       <Title size="small" as="h3" reversed>
         {title}
       </Title>
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </CaseBoxContentStyled>
   </CaseBoxStyled>
 );

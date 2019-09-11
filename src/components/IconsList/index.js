@@ -5,9 +5,7 @@ import { IconsListItemStyled, IconsListStyled } from './styled';
 const IconsList = ({ items = [] }) => (
   <IconsListStyled>
     {items.map((item, i) => (
-      <IconsListItemStyled key={i}>
-        {item}
-      </IconsListItemStyled>
+      <IconsListItemStyled key={i}>{item}</IconsListItemStyled>
     ))}
   </IconsListStyled>
 );

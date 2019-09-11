@@ -5,9 +5,7 @@ import { SectionStyled } from './styled';
 
 const Section = ({ children, reversed, odd }) => (
   <SectionStyled reversed={reversed} odd={odd}>
-    <Container>
-      {children}
-    </Container>
+    <Container>{children}</Container>
   </SectionStyled>
 );
 

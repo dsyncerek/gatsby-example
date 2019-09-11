@@ -6,11 +6,7 @@ import { SimpleBoxInnerStyled, SimpleBoxMedia, SimpleBoxStyled } from './styled'
 const SimpleBox = ({ link, icon, children, btnText = 'Read more' }) => (
   <SimpleBoxStyled>
     <SimpleBoxInnerStyled>
-      {icon && (
-        <SimpleBoxMedia>
-          {icon}
-        </SimpleBoxMedia>
-      )}
+      {icon && <SimpleBoxMedia>{icon}</SimpleBoxMedia>}
       {children}
     </SimpleBoxInnerStyled>
     {link && (

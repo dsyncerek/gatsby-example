@@ -9,11 +9,7 @@ import { HeroMediaStyled, HeroStyled } from './styled';
 
 const Hero = ({ big, media, title, children }) => (
   <HeroStyled big={big}>
-    {media && (
-      <HeroMediaStyled>
-        {media}
-      </HeroMediaStyled>
-    )}
+    {media && <HeroMediaStyled>{media}</HeroMediaStyled>}
     <Container>
       {big && (
         <TextContent standard>
