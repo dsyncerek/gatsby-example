@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "gatsby": "^2.15.14",
+    "gatsby": "^2.15.20",
     "lodash.throttle": "^4.1.1",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
@@ -32,13 +32,13 @@
     "react-dom": "^16.9.0",
     "styled-components": "^4.3.2",
     "styled-components-breakpoint": "^2.1.1",
-    "styled-reset": "^4.0.0"
+    "styled-reset": "^4.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.10.6",
-    "eslint": "^6.3.0",
-    "eslint-config-react-app": "^5.0.1",
+    "eslint": "^6.4.0",
+    "eslint-config-react-app": "^5.0.2",
     "eslint-loader": "^3.0.0",
     "eslint-plugin-flowtype": "^4.3.0",
     "eslint-plugin-import": "^2.18.2",
@@ -46,12 +46,12 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "gatsby-plugin-react-svg": "^2.1.2",
-    "gatsby-plugin-styled-components": "^3.1.5",
+    "gatsby-plugin-styled-components": "^3.1.6",
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
-    "stylelint": "^10.1.0",
-    "stylelint-config-recommended": "^2.2.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0"
   }
