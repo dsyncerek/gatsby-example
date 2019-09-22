@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import fonts from './fonts';
 import { eachBreakpoint } from './utils';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
-  
   ${reset}
+  ${fonts}
   
   html {
     box-sizing: border-box;
