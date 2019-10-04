@@ -1,6 +1,6 @@
+import { Link } from 'gatsby';
 import { cover } from 'polished';
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import DirectCamerasImage from '../assets/images/case-studies/direct-cameras.jpg';
@@ -9,7 +9,7 @@ import MagicianFrankImage from '../assets/images/case-studies/magician-frank.jpg
 import MaliResortBackImage from '../assets/images/case-studies/mali-resort-back.jpg';
 import MaliResortImage from '../assets/images/case-studies/mali-resort.jpg';
 import TrueBeddingImage from '../assets/images/case-studies/true-bedding.jpg';
-import HeroImage from '../assets/images/hero.jpg';
+import HeroImage from '../assets/images/code-1.jpg';
 import HowWeWorkImage from '../assets/images/how-we-work.png';
 import WhatWeDoImage from '../assets/images/what-we-do.png';
 import MobileIcon from '../assets/svg/icons/mobile.svg';
