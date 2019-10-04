@@ -2,7 +2,7 @@ import { margin } from 'polished';
 import styled, { css } from 'styled-components';
 
 export const TextStyled = styled.p(props => css`
-  line-height: ${props.tight ? '1.5' : '1.9'};
+  line-height: ${props.tight ? '1.5' : '1.7'};
   
   ${props.featured && css`
     font-size: 1.25em;

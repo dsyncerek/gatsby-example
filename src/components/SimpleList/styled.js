@@ -5,7 +5,10 @@ export const SimpleListStyled = styled.ol(props => css`
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 1.125em;
+  
+  ${props.featured && css`
+    font-size: 1.125em;
+  `}
 `);
 
 export const SimpleListItemStyled = styled.li(props => css`
