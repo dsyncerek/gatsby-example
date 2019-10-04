@@ -5,7 +5,7 @@ const GRID_COLUMNS = 12;
 
 const calcSize = ({ sizes }) => {
   return Object.keys(sizes).map(bp => {
-    const val = `${100 * sizes[bp] / GRID_COLUMNS}%`;
+    const val = `${(100 * sizes[bp]) / GRID_COLUMNS}%`;
 
     return breakpoint(bp)`
       flex: 0 0 ${val};
@@ -16,7 +16,7 @@ const calcSize = ({ sizes }) => {
 
 const calcOffset = ({ offsets }) => {
   return Object.keys(offsets).map(bp => {
-    const val = `${100 * offsets[bp] / GRID_COLUMNS}%`;
+    const val = `${(100 * offsets[bp]) / GRID_COLUMNS}%`;
 
     return breakpoint(bp)`
       margin-left: ${val};
@@ -24,10 +24,12 @@ const calcOffset = ({ offsets }) => {
   });
 };
 
-export const ColumnStyled = styled.div(props => css`
-  position: relative;
-  width: 100%;
-  
-  ${calcSize};
-  ${calcOffset};
-`);
+export const ColumnStyled = styled.div(
+  props => css`
+    position: relative;
+    width: 100%;
+
+    ${calcSize};
+    ${calcOffset};
+  `,
+);

@@ -9,7 +9,7 @@ export const ContainerStyled = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 20px;
-  
+
   ${breakpoint('sm')`
     padding: 0 40px;
   `};

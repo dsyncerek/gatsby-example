@@ -20,12 +20,15 @@ const titleSizes = {
   },
 };
 
-export const TitleStyled = styled.h1(props => css`
-  font-weight: 600;
-  ${eachBreakpoint('font-size', titleSizes[props.size])};
-  color: ${props.theme.colorPrimary};
-  
-  ${props.reversed && css`
-    color: ${props.theme.colorTextReversed};
-  `}
-`);
+export const TitleStyled = styled.h1(
+  props => css`
+    font-weight: 600;
+    ${eachBreakpoint('font-size', titleSizes[props.size])};
+    color: ${props.theme.colorPrimary};
+
+    ${props.reversed &&
+      css`
+        color: ${props.theme.colorTextReversed};
+      `}
+  `,
+);

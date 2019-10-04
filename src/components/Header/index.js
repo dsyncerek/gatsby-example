@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import React, { useState } from 'react';
 import Logo from '../../assets/svg/logos/logo.svg';
 import Container from '../Container';
 import Hamburger from '../Hamburger';
@@ -22,10 +22,14 @@ const Header = () => {
           </TextLink>
           <HeaderListStyled opened={menuOpened}>
             <li>
-              <TextLink href="#">About</TextLink>
+              <TextLink to="/about" as={Link}>
+                About
+              </TextLink>
             </li>
             <li>
-              <TextLink href="#">Services</TextLink>
+              <TextLink to="/services" as={Link}>
+                Services
+              </TextLink>
             </li>
             <li>
               <TextLink to="/case-studies" as={Link}>
@@ -33,7 +37,9 @@ const Header = () => {
               </TextLink>
             </li>
             <li>
-              <TextLink href="#">Contact</TextLink>
+              <TextLink to="/contact" as={Link}>
+                Contact
+              </TextLink>
             </li>
           </HeaderListStyled>
           <Hamburger onClick={() => setMenuOpened(b => !b)} opened={menuOpened} />
