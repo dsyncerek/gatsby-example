@@ -10,19 +10,6 @@
     "lint:scripts": "eslint src/**/*.js --fix",
     "lint:styles": "stylelint src/**/*.js --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": [
-      "prettier --write",
-      "eslint --fix",
-      "stylelint --fix",
-      "git add"
-    ]
-  },
   "dependencies": {
     "gatsby": "^2.15.29",
     "lodash.throttle": "^4.1.1",
@@ -51,6 +38,7 @@
     "lint-staged": "^9.4.1",
     "prettier": "^1.18.2",
     "stylelint": "^11.0.0",
+    "stylelint-config-prettier": "^6.0.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0"
