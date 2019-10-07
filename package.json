@@ -32,7 +32,7 @@
     "react-dom": "^16.10.2",
     "styled-components": "^4.4.0",
     "styled-components-breakpoint": "^2.1.1",
-    "styled-reset": "^4.0.1"
+    "styled-reset": "^4.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
