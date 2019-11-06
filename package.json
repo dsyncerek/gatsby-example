@@ -23,7 +23,7 @@
     "styled-reset": "^4.0.3"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
+    "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.4.0",
     "eslint-config-react-app": "^5.0.2",
     "eslint-plugin-flowtype": "^4.3.0",
