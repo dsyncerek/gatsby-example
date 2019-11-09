@@ -35,7 +35,7 @@
     "gatsby-plugin-styled-components": "^3.1.11",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.1",
     "stylelint": "^11.1.1",
     "stylelint-config-prettier": "^6.0.0",
     "stylelint-config-standard": "^19.0.0",
