@@ -12,7 +12,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "gatsby": "^2.18.17",
+    "gatsby": "^2.18.18",
     "lodash.throttle": "^4.1.1",
     "polished": "^3.4.2",
     "prop-types": "^15.7.2",
