@@ -22,41 +22,41 @@ export const RowStyled = styled.div(
     }
 
     ${props.wide &&
-      css`
-        ${margin(props.theme.gutter * -3, props.theme.gutter * -1)};
+    css`
+      ${margin(props.theme.gutter * -3, props.theme.gutter * -1)};
 
-        ${breakpoint('sm')`
+      ${breakpoint('sm')`
       ${margin(props.theme.gutter * -4, props.theme.gutter * -2)};
     `};
 
-        & > ${ColumnStyled} {
-          ${padding(props.theme.gutter * 3, props.theme.gutter)};
+      & > ${ColumnStyled} {
+        ${padding(props.theme.gutter * 3, props.theme.gutter)};
 
-          ${breakpoint('sm')`
+        ${breakpoint('sm')`
         ${padding(props.theme.gutter * 4, props.theme.gutter * 2)};
       `};
-        }
-      `};
+      }
+    `};
 
     ${props.float &&
-      css`
-        display: block;
+    css`
+      display: block;
 
-        &::after {
-          content: '';
-          display: table;
-          clear: both;
+      &::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      & > ${ColumnStyled} {
+        &:nth-child(odd) {
+          float: left;
         }
 
-        & > ${ColumnStyled} {
-          &:nth-child(odd) {
-            float: left;
-          }
-
-          &:nth-child(even) {
-            float: right;
-          }
+        &:nth-child(even) {
+          float: right;
         }
-      `};
+      }
+    `};
   `,
 );

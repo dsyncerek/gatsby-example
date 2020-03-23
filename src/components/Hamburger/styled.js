@@ -21,29 +21,29 @@ export const HamburgerStyled = styled.button(
     }
 
     ${!props.opened &&
-      css`
-        &::before {
-          top: 7px;
-          width: 75%;
-        }
+    css`
+      &::before {
+        top: 7px;
+        width: 75%;
+      }
 
-        &::after {
-          top: auto;
-          bottom: 7px;
-          box-shadow: 0 -7px currentColor;
-        }
-      `};
+      &::after {
+        top: auto;
+        bottom: 7px;
+        box-shadow: 0 -7px currentColor;
+      }
+    `};
 
     ${props.opened &&
-      css`
-        &::before {
-          transform: rotate(45deg);
-        }
+    css`
+      &::before {
+        transform: rotate(45deg);
+      }
 
-        &::after {
-          transform: rotate(-45deg);
-          box-shadow: none;
-        }
-      `};
+      &::after {
+        transform: rotate(-45deg);
+        box-shadow: none;
+      }
+    `};
   `,
 );

@@ -31,7 +31,8 @@ export const HeaderStyled = styled.header(
       transform: translateY(-100%);
     }
     
-    ${props.state === 'hidden' &&
+    ${
+      props.state === 'hidden' &&
       css`
         ${padding(props.theme.gutter * 2, 0)};
         color: ${props.theme.colorTextDefault};
@@ -39,7 +40,8 @@ export const HeaderStyled = styled.header(
         &::before {
           transform: none;
         }
-      `};
+      `
+    };
   `};
   `,
 );

@@ -8,11 +8,11 @@ export const TextContentStyled = styled.div(
     text-align: ${props.standard ? 'auto' : 'center'};
 
     ${props.wide &&
-      css`
-        ${breakpoint('lg')`
+    css`
+      ${breakpoint('lg')`
       ${padding(props.theme.gutter * 6, 0)};
     `};
-      `};
+    `};
 
     ${TitleStyled} {
       ${margin(0, 0, props.theme.gutter * 3, 0)};

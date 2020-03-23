@@ -8,7 +8,7 @@
     "format": "prettier src/**/*.js --write",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint src/**/*.js --fix",
-    "lint:styles": "stylelint src/**/*.js --fix",
+    "lint:styles": "stylelint src/**/*.js",
     "precommit": "lint-staged"
   },
   "dependencies": {
@@ -35,7 +35,7 @@
     "gatsby-plugin-styled-components": "^3.2.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.1",
     "stylelint": "^13.2.1",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",

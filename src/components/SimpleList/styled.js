@@ -8,9 +8,9 @@ export const SimpleListStyled = styled.ol(
     justify-content: center;
 
     ${props.featured &&
-      css`
-        font-size: 1.125em;
-      `}
+    css`
+      font-size: 1.125em;
+    `}
   `,
 );
 

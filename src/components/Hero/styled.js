@@ -14,11 +14,11 @@ export const HeroStyled = styled.div(
     overflow: hidden;
 
     ${props.big &&
-      css`
-        ${breakpoint('sm')`
+    css`
+      ${breakpoint('sm')`
       ${padding(props.theme.gutter * 30, 0, props.theme.gutter * 20)};
     `};
-      `};
+    `};
   `,
 );
 

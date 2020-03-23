@@ -27,8 +27,8 @@ export const TitleStyled = styled.h1(
     color: ${props.theme.colorPrimary};
 
     ${props.reversed &&
-      css`
-        color: ${props.theme.colorTextReversed};
-      `}
+    css`
+      color: ${props.theme.colorTextReversed};
+    `}
   `,
 );

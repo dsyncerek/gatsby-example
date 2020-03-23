@@ -27,8 +27,8 @@ export const ButtonStyled = styled.button(
     }
 
     ${props.block &&
-      css`
-        width: 100%;
-      `};
+    css`
+      width: 100%;
+    `};
   `,
 );

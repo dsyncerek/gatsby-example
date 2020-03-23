@@ -1,7 +1,7 @@
 import throttle from 'lodash.throttle';
 import { useEffect, useState } from 'react';
 
-export default function() {
+export default function () {
   const [headerState, setHeaderState] = useState('visible');
 
   const fun = () => {

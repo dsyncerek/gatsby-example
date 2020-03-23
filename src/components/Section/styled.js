@@ -13,24 +13,24 @@ export const SectionStyled = styled.section(
   `};
 
     ${props.reversed &&
-      css`
-        ${padding(props.theme.gutter * 8, 0)};
-        background: ${props.theme.colorPrimary};
-        color: ${props.theme.colorTextReversed};
+    css`
+      ${padding(props.theme.gutter * 8, 0)};
+      background: ${props.theme.colorPrimary};
+      color: ${props.theme.colorTextReversed};
 
-        ${breakpoint('sm')`
+      ${breakpoint('sm')`
       ${padding(props.theme.gutter * 10, 0)};
     `};
-      `};
+    `};
 
     ${props.odd &&
-      css`
-        ${padding(props.theme.gutter * 8, 0)};
-        background: ${props.theme.colors.gray};
+    css`
+      ${padding(props.theme.gutter * 8, 0)};
+      background: ${props.theme.colors.gray};
 
-        ${breakpoint('sm')`
+      ${breakpoint('sm')`
       ${padding(props.theme.gutter * 10, 0)};
     `};
-      `};
+    `};
   `,
 );

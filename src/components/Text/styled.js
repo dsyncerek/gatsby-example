@@ -6,14 +6,14 @@ export const TextStyled = styled.p(
     line-height: ${props.tight ? '1.5' : '1.7'};
 
     ${props.featured &&
-      css`
-        font-size: 1.25em;
-      `}
+    css`
+      font-size: 1.25em;
+    `}
 
     ${props.secondary &&
-      css`
-        font-size: 0.75em;
-      `}
+    css`
+      font-size: 0.75em;
+    `}
   
   &:not(:last-child) {
       ${margin(0, 0, props.theme.gutter * 2, 0)};

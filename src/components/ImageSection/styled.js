@@ -11,9 +11,9 @@ export const ImageSectionStyled = styled.div(
       object-position: center;
 
       ${props.height !== 'auto' &&
-        css`
-          height: 100%;
-        `}
+      css`
+        height: 100%;
+      `}
     }
   `,
 );

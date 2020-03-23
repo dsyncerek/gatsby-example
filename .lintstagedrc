@@ -2,7 +2,7 @@
   "src/**/*.js": [
     "prettier --write",
     "eslint --fix",
-    "stylelint --fix",
+    "stylelint",
     "git add"
   ]
 }
