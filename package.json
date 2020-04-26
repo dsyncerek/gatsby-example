@@ -34,7 +34,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-styled-components": "^3.2.4",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.6",
+    "lint-staged": "^10.1.7",
     "prettier": "^2.0.4",
     "stylelint": "^13.3.3",
     "stylelint-config-prettier": "^8.0.1",
