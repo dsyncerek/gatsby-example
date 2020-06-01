@@ -14,7 +14,7 @@
   "dependencies": {
     "gatsby": "^2.22.9",
     "lodash.throttle": "^4.1.1",
-    "polished": "^3.6.3",
+    "polished": "^3.6.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
